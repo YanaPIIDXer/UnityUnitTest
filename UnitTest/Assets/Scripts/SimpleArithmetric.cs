@@ -5,24 +5,24 @@ using UnityEngine;
 /// <summary>
 /// シンプルな演算クラス
 /// </summary>
-public class SimpleArithmetric<T>
+public class SimpleArithmetric
 {
     /// <summary>
     /// 値１
     /// </summary>
-    private T ValueA;
+    private int ValueA;
 
     /// <summary>
     /// 値２
     /// </summary>
-    private T ValueB;
+    private int ValueB;
 
     /// <summary>
     /// コンストラクタ
     /// </summary>
     /// <param name="ValueA">値１</param>
     /// <param name="ValueB">値２</param>
-    public SimpleArithmetric(T ValueA, T ValueB)
+    public SimpleArithmetric(int ValueA, int ValueB)
     {
         this.ValueA = ValueA;
         this.ValueB = ValueB;
@@ -32,7 +32,7 @@ public class SimpleArithmetric<T>
     /// 加算
     /// </summary>
     /// <returns>加算結果</returns>
-    public T Add()
+    public int Add()
     {
         return ValueA + ValueB;
     }
@@ -41,7 +41,7 @@ public class SimpleArithmetric<T>
     /// 減算
     /// </summary>
     /// <returns>減算結果</returns>
-    public T Sub()
+    public int Sub()
     {
         return ValueA - ValueB;
     }
